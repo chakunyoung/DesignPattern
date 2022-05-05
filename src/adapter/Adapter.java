@@ -1,19 +1,15 @@
 package adapter;
 
-// RunInterface �� JumpInterface �� �ٲ��ִ� ����
+public class Adapter implements A{ // 클라이언트에서 사용하는 인터페이스 A
 
-public class Adapter implements JumpInterface{
+    private B b; // A로 교체할 B 인터페이스
 
-    private RunInterface runInterface;
-
-    public Adapter(RunInterface runInterface){
-        this.runInterface = runInterface;
+    public Adapter(B b){ // B 인터페이스를 생성자
+        this.b = b;
     }
 
-
-    //RunInterface �� �ش� �κ��� ȣ��
     @Override
-    public void jump() {
-        runInterface.run();
+    public void Amethod() { // A 인터페이스의 메서드가 호출되면
+        b.Bmethod(); // B 인터페이스의 메서드를 구현으로 만들어주면 된다.
     }
 }

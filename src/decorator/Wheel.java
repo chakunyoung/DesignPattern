@@ -8,7 +8,7 @@ public class Wheel extends DecoratorCar{
     @Override
     public void description(){
         super.description();
+        System.out.println(this);
         System.out.println("wheel");
-        System.out.println();
     }
 }

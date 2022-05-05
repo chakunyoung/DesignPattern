@@ -8,7 +8,7 @@ public class Audio extends DecoratorCar{
     @Override
     public void description(){
         super.description();
+        System.out.println(this);
         System.out.println("audio");
-        System.out.println();
     }
 }

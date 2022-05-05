@@ -1,9 +1,9 @@
 package proxy;
 
-// Client °¡ Proxy ¸¦ °ÅÃÄ¼­ GameService ¸¦ »ç¿ëÇÑ´Ù.
+// Client ê°€ Proxy ë¥¼ ê±°ì³ì„œ GameService ë¥¼ ì‚¬ìš©í•œë‹¤.
 
-// Proxy ¿¡¼­ GameService ¸¦ ¹Ş¾Æ¼­
-// GameService Àü,ÈÄ·Î ÄÁÆ®·ÑÇØÁÙ ¼ö ÀÖ´Ù.
+// Proxy ì—ì„œ GameService ë¥¼ ë°›ì•„ì„œ
+// GameService ì „,í›„ë¡œ ì»¨íŠ¸ë¡¤í•´ì¤„ ìˆ˜ ìˆë‹¤.
 
 public class Client {
     public static void main(String[] args) {

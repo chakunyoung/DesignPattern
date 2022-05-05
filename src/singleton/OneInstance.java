@@ -3,8 +3,7 @@ package singleton;
 public class OneInstance {
     private static OneInstance oneInstance = null;
 
-    private OneInstance(){
-    }
+    private OneInstance(){}
 
     public static OneInstance getInstance(){
         if(oneInstance == null)

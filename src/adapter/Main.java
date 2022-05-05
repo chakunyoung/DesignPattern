@@ -1,19 +1,19 @@
 package adapter;
 
 /*
-    ¿¬°ü¾ø´Â interface ¸¦ ¿¬°áÇØÁØ´Ù.
+    ì—°ê´€ì—†ëŠ” interface ë¥¼ ì—°ê²°í•´ì¤€ë‹¤.
 */
 public class Main {
     public static void main(String[] args) {
-        JumpPerson jp = new JumpPerson();
-        RunPerson rp = new RunPerson();
+        A a = new Aimpl();
+        B b = new Bimpl();
 
-        act(jp);
-        Adapter adapter = new Adapter(rp);
+        act(a);
+        Adapter adapter = new Adapter(b);
         act(adapter);
 
     }
-    public static void act(JumpInterface ji){
-        ji.jump();
+    public static void act(A a){
+        a.Amethod();
     }
 }

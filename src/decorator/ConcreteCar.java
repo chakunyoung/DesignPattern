@@ -6,7 +6,7 @@ public class ConcreteCar implements Car{
     }
 
     public void description(){
+        System.out.println(this);
         System.out.println("Concrete");
-        System.out.println();
     }
 }

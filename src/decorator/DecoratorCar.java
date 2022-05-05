@@ -3,8 +3,8 @@ package decorator;
 public class DecoratorCar implements Car{
 
     private Car car;
-    //wheel ø°º≠¥¬ audio
-    //audio ø°º≠¥¬ concrete
+    //wheel ÏóêÏÑúÎäî audio
+    //audio ÏóêÏÑúÎäî concrete
 
     DecoratorCar(Car car){
         this.car = car;
@@ -12,9 +12,9 @@ public class DecoratorCar implements Car{
 
     @Override
     public void description() {
-        car.description(); // audio »£√‚ -> concrete »£√‚
+        car.description(); // 1. audio(concreteCar) // 2. concreteCar
         System.out.println("---------");
+        System.out.println(this);
         System.out.println("Decorator");
-        System.out.println();
     }
 }
